@@ -7,6 +7,7 @@
     apt:
      name: apache2
      state: present
+    when: ansible_os_family =="Dedian"   
   - name: i want to start apache2
     service: 
       name: apache2
